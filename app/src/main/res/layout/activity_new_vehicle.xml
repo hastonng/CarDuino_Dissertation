@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity_NewVehicle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/ic_back_black"
+        android:elevation="5dp"
+        app:title="Add Device">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_image_cardview_id"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="90dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/vehicle_image_id"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:alpha="0.3"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_edit_image"
+                android:alpha="0.6"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:textSize="15sp"
+        android:text="@string/photo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/vehicle_name_layout_id"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="190dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="bottom"
+        android:hint="@string/vehicle_name">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vehicle_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/insert_form_design"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/vehicle_model_layout_id"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="260dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="bottom">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vehicle_model_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:hint="@string/vehicle_model"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/insert_form_design"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignBottom="@+id/vehicle_name_layout_id"
+        app:srcCompat="@drawable/ic_vehicle_name_model" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="340dp"
+        android:background="?android:attr/listDivider" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/vehicle_duino_key_layout_id"
+        android:inputType="textEmailAddress"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginStart="80dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="bottom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vehicle_duino_key_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:hint="@string/duino_key"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/insert_form_design"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="390dp"
+        app:srcCompat="@drawable/ic_duino_key" />
+
+    <Button
+        android:id="@+id/next_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/secondary_color_button_design"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="25dp"
+        android:textColor="@color/textOnSecondary"
+        android:text="Next"
+        android:elevation="2dp"
+        tools:ignore="RtlSymmetry" />
+
+
+</RelativeLayout>

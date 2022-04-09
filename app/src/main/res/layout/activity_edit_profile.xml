@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity_EditProfile">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ToolBarStyle"
+        app:navigationIcon="@drawable/ic_clear_dark"
+        android:elevation="5dp"
+        app:title="@string/edit_profile_text"/>
+
+    <ImageButton
+        android:id="@+id/toolbar_done_btn_id"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentEnd="true"
+        android:elevation="10dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_done_dark"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_image_cardview_id"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="90dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="40dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/card_user_image_id"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:alpha="0.3"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_edit_image"
+                android:alpha="0.6"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:textSize="15sp"
+        android:text="@string/photo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/account_first_name_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="85dp"
+        android:layout_alignTop="@id/edit_image_cardview_id"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:gravity="bottom">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/account_first_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/first_name"
+            android:background="@drawable/insert_form_design"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/account_first_name_layout_id"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_account_setting_btn" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/account_last_name_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="70dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignTop="@id/account_first_name_layout_id"
+        android:gravity="bottom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/account_last_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/Last_name"
+            android:background="@drawable/insert_form_design"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/account_age_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginTop="85dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignTop="@id/account_last_name_layout_id"
+        android:gravity="bottom">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/account_age_id"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/age_hint"
+            android:background="@drawable/insert_form_design"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@+id/account_age_layout_id"
+        android:src="@drawable/ic_age" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/account_email_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="70dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignTop="@id/account_age_layout_id"
+        android:gravity="bottom">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/account_email_id"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/email_hint"
+        android:background="@drawable/insert_form_design"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@id/account_email_layout_id"
+        android:src="@drawable/ic_email" />
+
+</RelativeLayout>

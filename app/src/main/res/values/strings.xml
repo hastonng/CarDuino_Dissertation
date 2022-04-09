@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Car Duino</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Bluetooth Settings</string>
+    <string name="username_hint"><font size="13">DuinoKey or username</font></string>
+    <string name="password_hint"><font size="13">Password</font></string>
+    <string name="login">LOGIN</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="Login_Failed">Login Failed</string>
+    <string name="Login_Failed_Message">The Username or Password is incorrect. Please try again.</string>
+    <string name="title_activity_car_detail_page">car_detail_page</string>
+    <string name="car_model">Car Model:</string>
+    <string name="Status">Status:</string>
+    <string name="photo">Photo:</string>
+    <string name="name">Name:</string>
+    <string name="age">Age:</string>
+    <string name="email">Email:</string>
+    <string name="registered_devices">Registered \nDevices:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First name</string>
+    <string name="Last_name">Last name</string>
+    <string name="vehicle_name">Vehicle name</string>
+    <string name="vehicle_model">Vehicle model</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="bluetooth_paired_device">Bluetooth Paired Device</string>
+    <string name="title_activity_car_detail_2">activity_car_detail_2</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit Details</string>
+    <string name="lock">Lock</string>
+    <string name="unlock">Unlock</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="bluetooth_connection_is_not_connected">Please enable Bluetooth connection</string>
+    <string name="enable_bluetooth">Connect</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="discovered_devices">Discovered Devices</string>
+    <string name="duino_key">Duino key</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="auto_pilot">Auto-Pilot</string>
+    <string name="title_activity_duino_settings">Duino Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="auto_pilot_details">Allow automatic RSSI detection </string>
+    <string name="edit_profile_text">Edit profile</string>
+    <string name="age_hint">Age</string>
+    <string name="email_hint">Email</string>
+
+</resources>

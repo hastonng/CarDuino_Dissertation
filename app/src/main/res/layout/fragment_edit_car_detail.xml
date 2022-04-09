@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Fragment_EditCarDetail"
+    android:background="#FFF"
+    android:elevation="20dp">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity_EditCarDetail">
+
+
+        <FrameLayout
+            android:id="@+id/vehicle_image_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/edit_vehicle_image_id"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:alpha="0.4"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="77dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:alpha="0.5"
+                android:src="@drawable/ic_edit_image" />
+
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_clear_btn">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end">
+
+                <ImageButton
+                    android:id="@+id/toolbar_done_btn_id"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_done_btn"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:text="Car Name:"/>
+
+        <EditText
+            android:id="@+id/edit_car_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:text="@string/car_model"/>
+
+        <EditText
+            android:id="@+id/edit_car_model_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

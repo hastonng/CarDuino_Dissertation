@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Activity.Activity_AccountSetting">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/ic_back_black"
+        android:elevation="5dp"
+        app:title=" ">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/user_image_id"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:scaleType="centerCrop"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="285dp">
+
+
+    <TextView
+        android:id="@+id/account_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="70dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="90dp"
+        android:textSize="14sp"
+        android:text="@string/age" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_age" />
+
+    <TextView
+        android:id="@+id/account_age_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="130dp"
+        android:background="?android:attr/listDivider" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="50dp"
+        android:textSize="14sp"
+        android:text="@string/email" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="151dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_email" />
+
+    <TextView
+        android:id="@+id/account_email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="190dp"
+        android:background="?android:attr/listDivider" />
+
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="50dp"
+        android:textSize="14sp"
+        android:text="@string/registered_devices" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_reg_device"/>
+
+
+
+    <TextView
+        android:id="@+id/account_reg_device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="150dp"
+        android:background="?android:attr/listDivider" />
+    <LinearLayout
+        android:id="@+id/reg_device_list_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="150dp">
+    </LinearLayout>
+
+</RelativeLayout>
+
+<Button
+    android:id="@+id/profile_setting_btn_id"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/secondary_color_button_design"
+    android:text="@string/edit_profile"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="20dp"
+    android:elevation="0dp"
+    android:textColor="@color/textOnSecondary" />
+
+<FrameLayout
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" />
+
+</RelativeLayout>
+

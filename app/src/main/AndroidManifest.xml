@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="CarDuino">
+
+    <!--Runtime Permission for ANDROID 6.0 and above-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--Default Application Manifest-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Car Duino"
+        android:roundIcon="@mipmap/cd_app_logo_icon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+
+        <!--Manifest ACTIVITY_LOGIN_PAGE-->
+            <activity
+                android:name=".Activity.Activity_Login"
+                android:noHistory="true"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.GrayStatusBar"
+                android:windowSoftInputMode="adjustResize">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+
+
+        <!--Manifest ACTIVITY_MAIN_PAGE-->
+            <activity
+                android:name=".Activity.Activity_Main"
+                android:theme="@style/AppTheme"
+                android:screenOrientation="portrait">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+
+
+        <!--Manifest ACTIVITY_CAR_DETAIL_PAGE-->
+            <activity
+                android:name=".Activity.Activity_CarDetail"
+                android:theme="@style/AppTheme.OtherPage"
+                android:screenOrientation="portrait">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+
+
+        <!--Manifest ACTIVITY_ACC_SETTING_PAGE-->
+            <activity
+                android:name=".Activity.Activity_AccountSetting"
+                android:theme="@style/AppTheme.OtherPage"
+                android:screenOrientation="portrait">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+
+
+        <!--Manifest ACTIVITY_EDIT_PROFILE_PAGE-->
+        <activity
+            android:name=".Activity.Activity_EditProfile"
+            android:theme="@style/AppTheme.OtherPage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!--Manifest ACTIVITY_NEW_VEHICLE_PAGE-->
+            <activity
+                android:name=".Activity.Activity_NewVehicle"
+                android:theme="@style/AppTheme.OtherPage"
+                android:screenOrientation="portrait">
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+
+
+        <!--Manifest ACTIVITY_ABOUT_US_PAGE-->
+            <activity
+                android:name=".Activity.Activity_AboutUs"
+                android:theme="@style/AppTheme.OtherPage"
+                android:screenOrientation="portrait"/>
+
+
+
+        <!--Manifest ACTIVITY_NEW_USER_PAGE-->
+            <activity
+                android:name=".Activity.Activity_NewUser"
+                android:noHistory="true"
+                android:theme="@style/AppTheme.OtherPage"
+                android:windowSoftInputMode="adjustPan"
+                android:screenOrientation="portrait"/>
+
+
+
+        <!--Manifest ACTIVITY_BLE_SETTING_PAGE-->
+            <activity
+                android:name=".Activity.Activity_BluetoothSetting_Page"
+                android:noHistory="true"
+                android:theme="@style/AppTheme.OtherPage"
+                android:windowSoftInputMode="adjustPan"
+                android:screenOrientation="portrait"/>
+
+
+
+        <!--Manifest ACTIVITY_DUINO_SETTING_PAGE-->
+            <activity
+                android:name=".Activity.Activity_Duino_Settings"
+                android:theme="@style/AppTheme.OtherPage"
+                android:screenOrientation="portrait"
+                android:label="@string/title_activity_duino_settings">
+            </activity>
+
+
+
+        <!--Manifest ACTIVITY_SPLASH_SCREEN_PAGE-->
+        <activity
+            android:name=".Activity.Class_SplashScreen"
+            android:theme="@style/AppTheme.OtherPage"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+            <!-- BLE Service in This Mobile Application !-->
+            <service
+                android:name=".Services.Class_BluetoothLeService"
+                android:enabled="true" />
+    </application>
+
+</manifest>

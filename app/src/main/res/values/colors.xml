@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application Based Theme !-->
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryLight">#FFFFFF</color>
+    <color name="colorPrimaryDark">#EFEFEF</color>
+    <color name="colorSecondary">#311b92</color>
+    <color name="colorSecondaryLight">#6746c3</color>
+    <color name="colorSecondaryDark">#000063</color>
+    <color name="textOnPrimary">#000000</color>
+    <color name="textOnSecondary">#ffffff</color>
+
+    <!-- Shadow text !-->
+
+    <color name="light_font">#FBFBFB</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="light_text_shadow">#50000000</color>
+    <color name="grinsboro">#DCDCDC</color>
+    <color name="F2F3F4">#F2F3F4</color>
+
+    <!-- Login Gradient !-->
+    <color name="purple_500">#7b4397</color>
+    <color name="deep_purple_500">#dc2430</color>
+    <color name="indigo_500">#007991</color>
+    <color name="blue_500">#78ffd6</color>
+    <color name="cyan_500">#159957</color>
+    <color name="light_blue_500">#155799</color>
+    <color name="little_leaf">#3CA55C</color>
+    <color name="little_leaf2">#B5AC49</color>
+</resources>

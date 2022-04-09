@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/account_setting_id"
+            android:icon="@drawable/ic_account_setting_btn"
+            android:title="Account Setting" />
+        <item
+            android:id="@+id/duino_setting_id"
+            android:icon="@drawable/ic_duino_setting_btn"
+            android:title="Duino Setting" />
+    </group>
+
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/help_feedback_id"
+                android:icon="@drawable/ic_help_btn"
+                android:title="Help and Feedback" />
+            <item
+                android:id="@+id/about_us_id"
+                android:icon="@drawable/ic_about_us_btn"
+                android:title="About Us" />
+    </group>
+
+    <group android:id="@+id/group3" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/logout_id"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

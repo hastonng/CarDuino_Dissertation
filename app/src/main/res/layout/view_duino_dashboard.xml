@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashboard_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle_design">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="190dp"
+        android:background="@drawable/capsule_shape_design"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_image_cardview_id"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="40dp">
+
+        <ImageView
+            android:id="@+id/card_user_image_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/dashboard_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignStart="@id/edit_image_cardview_id"
+        android:textSize="18sp"
+        android:text="Car Name" />
+
+    <TextView
+        android:id="@+id/status_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_alignStart="@id/edit_image_cardview_id"
+        android:text="@string/Status" />
+
+    <TextView
+        android:id="@+id/dashboard_status_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_alignStart="@id/status_view_id"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/dashboard_lock_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:minHeight="40dp"
+        android:elevation="5dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/lock_button_design"
+        android:layout_alignStart="@id/edit_image_cardview_id"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="20dp"
+        android:text="@string/lock" />
+
+    <Button
+        android:id="@+id/dashboard_unlock_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="150dp"
+        android:minHeight="40dp"
+        android:elevation="5dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="160dp"
+        android:layout_alignStart="@id/dashboard_lock_btn_id"
+        android:background="@drawable/unlock_button_design"
+        android:drawableLeft="@drawable/ic_unlock_open_black_24dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/unlock" />
+
+
+</RelativeLayout>
